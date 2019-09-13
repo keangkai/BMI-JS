@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expression</h1>
+        <div class="form-section">
+            <form id="bmi-form">
+                <h2>BMI</h2>
+                <label id="display-name">Name: </label>
+                <hr/>
+                <input type="hidden" id="id" />
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label>Enter Your Name.</label></td>
+                            <td><input type="text" id="name" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Weight: </label></td>
+                            <td><input type="number" id="weight" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Height: </label></td>
+                            <td><input type="number" id="height" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label id="display-bmi">Your BMI: </label></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="submit" id="save">Save</button>
+                <button type="button" id="update">Update</button>
+                <button type="button" id="cancel">Cancel</button>
+            </form>
+        </div>
+
+        <div class="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Height</th>
+                        <th>Weight</th>
+                        <th>BMI</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="bmi-table-body">
+                </tbody>
+            </table>
+        </div>
+
+        <div id="popup-modal">
+            <h4 id="popup-message"></h4>
+            <button type="button" id="popup-button">Ok</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
